@@ -10,50 +10,51 @@
             <div id="wrapper">
             <h1>Lealena Befikadu's Lab 4</h1>
             </div>
-            <div class="container">
-            <form>
+            <div class="container"> <!--https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767-->
+            <form action="/server.js" method="GET">
                 <ul class="flex-outer">
                     <li>
-                        <label for="first-name">First Name</label>
-                        <input type="text" maxlength="140" id="first-name" placeholder="Enter your first name here">
+                        <label for="first_name">First Name</label>
+                        <input type="text" maxlength="140" id="first_name">
                     </li>
                     <li>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" maxlength="140" id="last-name" placeholder="Enter your last name here">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" maxlength="140" id="last_name">
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your email here">
+                        <input type="email" id="email">
                     </li>
                     <li>
                         <label for="phone">Phone</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone here">
+                        <input type="tel" id="phone">
                     </li>
                     <li>
-                        <label for="message">Text field</label>
-                        <textarea rows="5" cols="33" id="message" placeholder="Enter your message here"></textarea>
+                        <label for="text_field">Text field</label>
+                        <textarea rows="5" cols="33" id="text_field"></textarea>
                     </li>
                     <li>
                         <p>Age</p>
                         <ul class="flex-inner">
                             <li>
-                                <input type="checkbox" id="eighteen-to-thirtyfive">
-                                <label for="eighteen-to-thirtyfive">18-35</label>
+                                <input type="checkbox" id="18-35">
+                                <label for="18-35">18-35</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="thirtyfive-to-fifty">
-                                <label for="thirtyfive-to-fifty">35-50</label>
+                                <input type="checkbox" id="35-50">
+                                <label for="35-50">35-50</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="fifty-to-sixtyfive">
-                                <label for="fifty-to-sixtyfive">50-65</label>
+                                <input type="checkbox" id="50-65">
+                                <label for="50-65">50-65</label>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button type="submit">Submit</button>
+                        <button type="submit" formmethod="POST">Submit</button>
                     </li>
                 </ul>
-            </form>
+            </form> <!---https://www.w3schools.com/tags/att_button_formmethod.asp-->
             </div>
         </body>
+</html>
