@@ -4,57 +4,57 @@
         <meta charset="utf-8">
         <title>Lealena Befikadu's Lab 4</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Srisakdi:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
         <body>
             <div id="wrapper">
             <h1>Lealena Befikadu's Lab 4</h1>
             </div>
             <div class="container"> <!--https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767-->
-            <form action="/server.js" method="GET">
+            <form action="/api" method="post">
                 <ul class="flex-outer">
                     <li>
-                        <label for="first_name">First Name</label>
-                        <input type="text" maxlength="140" id="first_name">
+                        <label for="fname">First Name</label>
+                        <input type="text" maxlength="140" name="fname"  id="fname">
                     </li>
                     <li>
-                        <label for="last_name">Last Name</label>
-                        <input type="text" maxlength="140" id="last_name">
+                        <label for="lname">Last Name</label>
+                        <input type="text" maxlength="140" name="lname" id="lname">
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" name="email" id="email">
                     </li>
                     <li>
                         <label for="phone">Phone</label>
-                        <input type="tel" id="phone">
+                        <input type="tel" name="phone" id="phone">
                     </li>
                     <li>
-                        <label for="text_field">Text field</label>
-                        <textarea rows="5" cols="33" id="text_field"></textarea>
+                        <label for="messages">Text field</label>
+                        <textarea rows="5" cols="33" name="message" id="messages"></textarea>
                     </li>
                     <li>
                         <p>Age</p>
                         <ul class="flex-inner">
                             <li>
-                                <input type="checkbox" id="18-35">
+                                <input type="checkbox" name="18-35" id="18-35">
                                 <label for="18-35">18-35</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="35-50">
+                                <input type="checkbox" name="35-50" id="35-50">
                                 <label for="35-50">35-50</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="50-65">
+                                <input type="checkbox" name="50-65" id="50-65">
                                 <label for="50-65">50-65</label>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <button type="submit" formmethod="POST">Submit</button>
+                        <button type="submit" name="submit" id="submit">Submit</button>
                     </li>
                 </ul>
-            </form> <!---https://www.w3schools.com/tags/att_button_formmethod.asp-->
+            </form> 
             </div>
         </body>
 </html>
