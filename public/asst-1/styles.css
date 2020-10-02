@@ -66,7 +66,6 @@ h2 {
 
 .container {
   max-width: 960px;
-  min-height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -100,6 +99,7 @@ h2 {
   border-radius: 4px;
   background: #f54100;
   padding: 15px;
+  flex: 0 2 auto;
   border-style: solid;
   margin-bottom: 15px;
 }
