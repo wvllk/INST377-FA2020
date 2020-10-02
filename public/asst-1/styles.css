@@ -1,4 +1,9 @@
 /* || General setup */
+html {
+  display: block;
+}
+
+
 body {
   padding: 0px;
   margin: 0 auto;
@@ -27,9 +32,15 @@ h2 {
 .list-title {
   font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 2px;
   font-style: italic;
 }
 
+.list 
+{
+margin-bottom: 15px;
+
+}
 /* || header layout */
 
 .header {
@@ -51,6 +62,7 @@ h2 {
 
 .container {
   max-width: 960px;
+  min-height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -59,36 +71,31 @@ h2 {
 }
 
 .left {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   flex: 0 1 auto;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0;
   margin-right: 15px;
-  max-width: 200px;
+  width: 175px;
 }
 
 .left p {
   background: #f54100;
   border-radius: 4px;
   padding: 15px;
-  display: flex;
-  flex-direction: row;
   flex: 0 1 auto;
+  border-style: solid;
 }
 
 .image {
-  width: inherit;
+  /* width: inherit; */
   border-style: solid;
   border-color: ivory;
-  border-width: 1px;
   border-radius: 4px;
-  max-width: 180px;
+  border-width: 1px
+
 }
 
 .bottom {
+  /* flex: 0 2 auto; */
+  border-radius: 4px;
   background: #f54100;
   padding: 15px;
   border-color: #cccccc;
@@ -101,25 +108,20 @@ h2 {
   }
 
   .left {
-    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     margin-bottom: 15px;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    
   }
-  .left p {
-    margin: 15px;
-    flex-direction: row;
-    display: block;
-    /* align-items: center; */
-  }
+  
+ 
 
-  .image {
-    flex-direction: row;
-    display: flex;
-    /* align-items: center; */
-  }
+  
+
+
 }
