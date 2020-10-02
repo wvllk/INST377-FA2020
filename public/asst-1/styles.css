@@ -3,7 +3,6 @@ html {
   display: block;
 }
 
-
 body {
   padding: 0px;
   margin: 0 auto;
@@ -38,13 +37,11 @@ h2 {
 }
 
 .list {
-margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
 
 .intro {
-margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
 
 /* || blocks layouts */
@@ -58,9 +55,8 @@ margin-bottom: 15px;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-
 
 .wrapper {
   display: flex;
@@ -97,8 +93,7 @@ margin-bottom: 15px;
   border-color: black;
   border-radius: 4px;
   border-width: 1px;
-  width: inherit; 
-
+  width: inherit;
 }
 
 .bottom {
@@ -125,4 +120,5 @@ margin-bottom: 15px;
     margin-bottom: 15px;
   }
 
+ 
 }
