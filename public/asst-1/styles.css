@@ -1,48 +1,32 @@
 /* || General setup */
-
-html,
 body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  width: 70%;
-  min-width: 800px;
+  padding: 0px;
   margin: 0 auto;
   background-color: #f7784a;
+  font-family: "Roboto", sans-serif;
 }
 
 /* || typography */
 
-h1,
-h2 {
+h1 {
   font-family: "Sansita Swashed", cursive;
   color: #2a2a2a;
-}
-
-p,
-input,
-li {
-  font-family: "Roboto", sans-serif;
-  color: #2a2a2a;
-}
-
-h1 {
   font-size: 4rem;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #2a2a2a;
   font-size: 2rem;
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .list-title {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -57,10 +41,6 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.header img {
-  align-items: flex-end;
 }
 
 .wrapper {
@@ -112,6 +92,7 @@ h2 {
   background: #f54100;
   padding: 15px;
   border-color: #cccccc;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -131,5 +112,14 @@ h2 {
   }
   .left p {
     margin: 15px;
+    flex-direction: row;
+    display: block;
+    /* align-items: center; */
+  }
+
+  .image {
+    flex-direction: row;
+    display: flex;
+    /* align-items: center; */
   }
 }
