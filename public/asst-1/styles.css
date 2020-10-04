@@ -6,7 +6,7 @@ html {
 body {
   padding: 0px;
   margin: 0 auto;
-  background-color: #f7784a;
+  background-color: #e2c773;
   font-family: "Roboto", sans-serif;
 }
 
@@ -14,7 +14,7 @@ body {
 
 h1 {
   font-family: "Sansita Swashed", cursive;
-  color: #2a2a2a;
+  color: #7d90ff;
   font-size: 4rem;
   text-align: center;
   font-weight: 400;
@@ -22,32 +22,33 @@ h1 {
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
-  font-size: 2rem;
+  color: ivory;
+  font-size: 1.75rem;
   text-align: left;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .list-title {
-  color: #2a2a2a;
+  color: ivory;
   font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   font-style: italic;
 }
 
 .list {
-  margin-bottom: 15px;
+  color: ivory;
+  margin-bottom: 1px;
 }
 
 .intro {
-  margin-bottom: 15px;
+  color: ivory;
+  margin-bottom: 1px;
 }
 
-/* || blocks layouts */
+/* || block layouts */
 
 .header {
-  background-color: #751f00;
+  background-color: #91751c;
   width: 100%;
   margin-bottom: 15px;
   padding: 15px;
@@ -76,31 +77,33 @@ h2 {
 .left {
   flex: 0 1 auto;
   margin-right: 15px;
-  width: 175px;
+  width: 190px;
 }
 
 .left p {
-  background: #f54100;
+  background: #586ddf;
+  color: ivory;
   border-radius: 4px;
   padding: 15px;
   flex: 0 1 auto;
-  border-style: solid;
+  border: solid 1px black;
 }
 
 .image {
-  border-style: solid;
+  border-width: 1px;
+  border: solid 1px black;
   border-color: black;
   border-radius: 4px;
-  border-width: 1px;
   width: inherit;
 }
 
 .bottom {
-  border-radius: 4px;
-  background: #f54100;
-  padding: 15px;
   flex: 0 2 auto;
-  border-style: solid;
+  border-radius: 4px;
+  background: #586ddf;
+  color: ivory;
+  padding: 15px;
+  border: solid 1px black;
   margin-bottom: 15px;
 }
 
@@ -119,6 +122,7 @@ h2 {
     margin: 0;
     margin-bottom: 15px;
   }
-
- 
+  .left p {
+    margin-bottom: 15px;
+  }
 }
