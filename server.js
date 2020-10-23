@@ -1,6 +1,8 @@
 // These are our required libraries to make the server work.
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
+import countries from './public/lab_6/countries.js'
+
 import express from 'express';
 import dotenv from 'dotenv';
 
@@ -25,7 +27,7 @@ app.route('/api')
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post((req, res) => {
-    res.send('hello world');
+    res.json(countries);
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
   });
