@@ -78,7 +78,3 @@ body {
   padding: 0 16px;
   margin:0 auto;
 }
-
-.container.flex-outer {
-  display: flex;
-}
