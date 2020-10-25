@@ -9,9 +9,9 @@ function range(int) {
 }
 
 function sortFunction(a, b, key) {
-  if (a < b) {
+  if (a[key] < b[key]) {
     return -1;
-  } if (a > b) {
+  } if (a[key] > b[key]) {
     return 1;
   }
   return 0;
@@ -29,27 +29,26 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      if (document.querySelector('flex-inner')) {
-        document.querySelector('flex-inner').remove();
+      if (document.querySelector('.flex-inner')) {
+        document.querySelector('.flex-inner').remove();
       }
       const array = range(10);
       const newarray = array.map(() => {
-        const numbers = Math.floor(Math.random()*243);
+        const numbers = Math.floor(Math.random() * 243);
         return fromServer[numbers];
       });
 
-      const revcoun = newarray.sort((a,b) => sortFunction(b, a, 'name')); 
+      const revcoun = newarray.sort((a, b) => sortFunction(b, a, 'name'));
       const ordlist = document.createElement('ol');
       ordlist.className = 'flex-inner';
       $('form').prepend(ordlist);
 
-      const el = myFlex.appendChild(document.createElement("li"));
-      
-      // You're going to do your lab work in here. Replace this comment.
-    //   console.log('fromServer', fromServer);
-    // 
-  })
-
-
+      revcoun.forEach((el) => {
+        const element = document.createElement('li');
+        $(element).append(`<input type="checkbox" value=${el.code} id=${el.code} />`);
+        $(element).append(`<label for=${el.code}>${el.name} </label>`);
+        ordlist.appendChild(element);
+      });
+    })
     .catch((err) => console.log(err));
 });
