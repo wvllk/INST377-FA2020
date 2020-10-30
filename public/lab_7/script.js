@@ -1,19 +1,42 @@
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
+  const carr = [];
+  const end = {};
+  for (let i = 0; i < restaurantList.length; i += 1) {
+    carr.push(restaurantList[i].category);
+  }
+  for (let i = 0; i < carr.length; i += 1) {
+    if (!end[carr[i]]) {
+      end[carr[i]] = 0;
+    }
+    end[carr[i]] += 1;
+  }
+
+  const list = Object.keys(end).map((category) => ({
+    y: end[category],
+    label: category
+
+  }));
+
+  console.log('reply', list);
   return list;
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
   CanvasJS.addColorSet('customColorSet1', [
-    // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
+    '#4661EE',
+    '#F5A52A',
+    '#B08BEB',
+    '#FAA586',
+    '#1BCDD1'
   ]);
 
-  return {
+  const canvasJSConfigobject = {
     animationEnabled: true,
     colorSet: 'customColorSet1',
     title: {
-      text: 'Change This Title'
+      text: 'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
@@ -22,9 +45,29 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     axisY2: {
       interlacedColor: 'rgba(1,77,101,.2)',
       gridColor: 'rgba(1,77,101,.1)',
-      title: 'Change This Title',
+      title: 'Restaurants By Category',
       labelFontSize: 12,
-      scaleBreaks: {customBreaks: []} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+      scaleBreaks: {
+        customBreaks: [{
+          startValue: 40,
+          endValue: 50,
+          color: 'yellow',
+          type: 'zigzag'
+        },
+        {
+          startValue: 85,
+          endValue: 100,
+          color: 'yellow',
+          type: 'zigzag'
+        },
+        {
+          startValue: 140,
+          endValue: 175,
+          color: 'yellow',
+          type: 'zigzag'
+        }
+        ]
+      }
     },
     data: [{
       type: 'bar',
@@ -33,6 +76,8 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
       dataPoints: datapointsFromRestaurantsList
     }]
   };
+
+  return canvasJSConfigobject;
 }
 
 function runThisWithResultsFromServer(jsonFromServer) {

@@ -19,11 +19,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
-<<<<<<< HEAD
-    "nodemon": "^2.0.6",
-=======
     "nodemon": "^2.0.4",
->>>>>>> b1e807f7d88e39018b9a015ade74fe89bb0c9f40
     "recursive-readdir": "^2.2.2"
   },
   "devDependencies": {
