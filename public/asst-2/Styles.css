@@ -1,0 +1,95 @@
+/* Malik Downey*/
+/* Lealena Befikadu*/
+h1{
+    font-family: "Montserrat", sans-serif;
+    }
+  
+  body {
+    background: #006377;
+  }
+  
+  .header {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  h1 {
+    margin: 20px 50px;
+    padding: 0 20px;
+    min-height: 75px;
+    background-color: #0097B2;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+  }
+  
+  .type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  
+  .text_input {
+    width: 400px;
+    height: 50px;
+    font-size: 1.2em;
+    border: 1px solid black;
+  }
+  
+  /* centers objects */
+  .filteredcases {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  /* column(S) movement forced */
+  .rest_list {
+    flex-direction: column;
+    list-style: none;
+    width: auto;
+  }
+  
+  /* name moves to left side*/
+  .name {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+  }
+  
+  .address {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-style: italic;
+  }
+  
+  /* uniformity among objects */
+  .rest_list > li {
+    width: 500px;
+    height: auto;
+    margin: 2%;
+    background: rgb(208,208,208);
+    background: linear-gradient(90deg, rgba(208,208,208,1) 0%,
+     rgb(39, 187, 10) 45%, rgb(116, 226, 14) 100%);
+  }
